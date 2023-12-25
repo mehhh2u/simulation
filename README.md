@@ -3,7 +3,7 @@ ros2 launch husky_gazebo custom_world.launch.py world_name:='world_name.world'
 ros2 launch simulation simulation_data_collection.launch.py 'world_name:=world' 'dataset_type:=training' 'number_tries:=5
 
 Using a teleop_keyboard program works with the gazebo world file. I may have imported the controls over incorrectly, I used the code from the example shown in the other github: https://github.com/romarcg/traversability_estimation
-I tried to convert the ROS1 syntax format to the ROS2 format as much as I could. The file would run, but there is an issue with publishing the twist command to /husky_velocity_controller/cmd_vel_unstamped and issue with retrieving data from /odom.
+I tried to convert the ROS1 format to the ROS2 format as much as I could. The file would run, but there is an issue with publishing the twist command to /husky_velocity_controller/cmd_vel_unstamped and issue with retrieving data from /odom.
 When I echoed /odom, I received data, when I directly published to /husky_velocity_controller/cmd_vel_unstamped, the robot moved in gazebo.
 
 I was planning to redo everything from **PubsSubsManager** onwards as I think that the issue originates from that point onwards.
