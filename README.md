@@ -1,5 +1,7 @@
 Run structure is as follows:
+
 ros2 launch husky_gazebo custom_world.launch.py world_name:='world_name.world'
+
 ros2 launch simulation simulation_data_collection.launch.py 'world_name:=world' 'dataset_type:=training' 'number_tries:=5
 
 Using a teleop_keyboard program works with the gazebo world file. I may have imported the controls over incorrectly, I used the code from the example shown in the other github: https://github.com/romarcg/traversability_estimation
