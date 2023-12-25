@@ -201,23 +201,43 @@ ros2 services from ros2 service list after launching gazebo world:
 It says that ekf_node and application marker_services have stopped unexpectedly (from husky side, not sure if it is affecting the simulation, but i doubt it)
 
 ros2 topic list:
+
 /clock
+
 /cmd_vel
+
 /dynamic_joint_states
+
 /e_stop
+
 /gazebo/link_states
+
 /gazebo/model_states
+
 /gps/data
+
 /husky_velocity_controller/cmd_vel_unstamped
+
 /imu/data_raw
+
 /joint_states
+
 /joy_teleop/cmd_vel
+
 /odom
+
 /parameter_events
+
 /performance_metrics
+
 /robot_description
+
 /rosout
+
 /tf
+
 /tf_static
+
 /twist_marker_server/cmd_vel
+
 /twist_server/update
