@@ -10,6 +10,7 @@ I was planning to redo everything from **PubsSubsManager** onwards as I think th
 
 ros2 services from ros2 service list after launching gazebo world:
 /controller_manager/configure_and_start_controller
+
 /controller_manager/configure_controller
 /controller_manager/describe_parameters
 /controller_manager/get_parameter_types
@@ -102,7 +103,6 @@ ros2 services from ros2 service list after launching gazebo world:
 /twist_server_node/set_parameters
 /twist_server_node/set_parameters_atomically
 /unpause_physics
-
 
 
 It says that ekf_node and application marker_services have stopped unexpectedly (from husky side, not sure if it is affecting the simulation, but i doubt it)
