@@ -9,6 +9,7 @@ When I echoed /odom, I received data, when I directly published to /husky_veloci
 I was planning to redo everything from **PubsSubsManager** onwards as I think that the issue originates from that point onwards.
 
 ros2 services from ros2 service list after launching gazebo world:
+
 /controller_manager/configure_and_start_controller
 
 /controller_manager/configure_controller
