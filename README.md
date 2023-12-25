@@ -9,17 +9,11 @@ When I echoed /odom, I received data, when I directly published to /husky_veloci
 I was planning to redo everything from **PubsSubsManager** onwards as I think that the issue originates from that point onwards.
 
 ros2 services from ros2 service list after launching gazebo world:
-
 /controller_manager/configure_and_start_controller
-
 /controller_manager/configure_controller
-
 /controller_manager/describe_parameters
-
 /controller_manager/get_parameter_types
-
 /controller_manager/get_parameters
-
 /controller_manager/list_controller_types
 /controller_manager/list_controllers
 /controller_manager/list_hardware_interfaces
@@ -33,6 +27,12 @@ ros2 services from ros2 service list after launching gazebo world:
 /controller_manager/switch_controller
 /controller_manager/unload_controller
 /delete_entity
+/ekf_node/describe_parameters
+/ekf_node/get_parameter_types
+/ekf_node/get_parameters
+/ekf_node/list_parameters
+/ekf_node/set_parameters
+/ekf_node/set_parameters_atomically
 /gazebo/describe_parameters
 /gazebo/gazebo_ros_state/describe_parameters
 /gazebo/gazebo_ros_state/get_parameter_types
@@ -88,7 +88,21 @@ ros2 services from ros2 service list after launching gazebo world:
 /robot_state_publisher/set_parameters
 /robot_state_publisher/set_parameters_atomically
 /spawn_entity
+/twist_mux/describe_parameters
+/twist_mux/get_parameter_types
+/twist_mux/get_parameters
+/twist_mux/list_parameters
+/twist_mux/set_parameters
+/twist_mux/set_parameters_atomically
+/twist_server/get_interactive_markers
+/twist_server_node/describe_parameters
+/twist_server_node/get_parameter_types
+/twist_server_node/get_parameters
+/twist_server_node/list_parameters
+/twist_server_node/set_parameters
+/twist_server_node/set_parameters_atomically
 /unpause_physics
+
 
 It says that ekf_node and application marker_services have stopped unexpectedly (from husky side, not sure if it is affecting the simulation, but i doubt it)
 
