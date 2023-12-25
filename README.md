@@ -11,6 +11,7 @@ I was planning to redo everything from **PubsSubsManager** onwards as I think th
 ros2 services from ros2 service list after launching gazebo world:
 
 /controller_manager/configure_and_start_controller
+
 /controller_manager/configure_controller
 
 /controller_manager/describe_parameters
