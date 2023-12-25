@@ -104,6 +104,7 @@ ros2 services from ros2 service list after launching gazebo world:
 /unpause_physics
 
 
+
 It says that ekf_node and application marker_services have stopped unexpectedly (from husky side, not sure if it is affecting the simulation, but i doubt it)
 
 ros2 topic list:
